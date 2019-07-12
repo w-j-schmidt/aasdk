@@ -132,6 +132,7 @@ void VideoServiceChannel::handleAVChannelSetupRequest(const common::DataConstBuf
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleAVChannelSetupRequest:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
@@ -145,6 +146,7 @@ void VideoServiceChannel::handleStartIndication(const common::DataConstBuffer& p
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleStartIndication:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
@@ -158,6 +160,7 @@ void VideoServiceChannel::handleStopIndication(const common::DataConstBuffer& pa
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleStopIndication:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
@@ -171,6 +174,7 @@ void VideoServiceChannel::handleChannelOpenRequest(const common::DataConstBuffer
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleChannelOpenRequest:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
@@ -184,6 +188,7 @@ void VideoServiceChannel::handleVideoFocusRequest(const common::DataConstBuffer&
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleVideoFocusRequest:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
@@ -197,6 +202,7 @@ void VideoServiceChannel::handleAVMediaWithTimestampIndication(const common::Dat
     }
     else
     {
+        AASDK_LOG(error) << "[VideoServiceChannel] handleAVMediaWithTimestampIndication:";
         eventHandler->onChannelError(error::Error(error::ErrorCode::PARSE_PAYLOAD));
     }
 }
